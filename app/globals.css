@@ -16,22 +16,22 @@
 
 @font-face {
   font-family: 'Klavika';
-  src: url('./font/Klavika-bold.otf') format('opentype');
+  src: url('/fonts/Klavika-bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Klavika';
-  src: url('./font/Klavika-medium.otf') format('opentype');
-  font-weight: normal;
+  src: url('/fonts/Klavika-medium.otf') format('opentype');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Klavika';
-  src: url('./font/Klavika-light.otf') format('opentype');
-  font-weight: lighter;
+  src: url('/fonts/Klavika-light.otf') format('opentype');
+  font-weight: light;
   font-style: normal;
 }
 
@@ -54,7 +54,8 @@
   src: url('./font/MersadLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-}
+} my css
+
 
 
 body {
