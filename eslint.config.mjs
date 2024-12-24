@@ -1,14 +1,26 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
-
-export default eslintConfig;
+export default [
+  {
+    ignores: ["node_modules"], // Files or directories to ignore
+  },
+  {
+    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"], // Specify file types
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: "latest", // Use the latest ECMAScript features
+        sourceType: "module", // Enable ES Modules
+      },
+      globals: {
+        React: "readonly",
+      },
+    },
+    plugins: {
+      // Include necessary plugins
+      "@next/next": require("@next/eslint-plugin-next"),
+    },
+    rules: {
+      // Add your custom rules here
+      "no-unused-vars": "warn",
+      "react/react-in-jsx-scope": "off", // For Next.js, React is auto-imported
+    },
+  },
+];

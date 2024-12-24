@@ -8,7 +8,7 @@ const HeroArea = () => {
             <div className='container mx-auto  py-[130px] sm:py-[150px] md:py-[180px] lg:py-[220px] xl:py-[260px] 2xl:py-[304px] sm:px-[0] px-[24px]'>
                 <div className='flex justify-center items-center flex-col'>
                     <p className='venturecpai'>#01 Venture Capital Company</p>
-                    <h2 className='backing '>Backing the next generation of founders. <br className='sm:block hidden'/> Empowering tomorrow, today.</h2>
+                    <h2 className='backing '>Backing the next generation of founders. <br className='sm:block hidden'/>Empowering tomorrow, today.</h2>
                     <p className='enble'>We enable the UK's top tech innovators to transform <br/> visionary ideas into impactful businesses.</p>
                     <button className='getstartedbutt pb-5'>Get Started</button>
                 </div>

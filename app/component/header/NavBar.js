@@ -7,6 +7,7 @@ import logo from '../image/logo.png';
 import Image from 'next/image';
 import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
+import image13 from '../image/image13.png';
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);
@@ -62,7 +63,7 @@ const NavBar = () => {
 
                 
                 <ul className=''>
-                    <button className='founderbtn'>I’m a founder</button>
+                    <button className='founderbtn flex justify-center items-center gap-[12px]'>I'm a founder<Image src={image13} alt=''/></button>
                 </ul>
                 
                 
