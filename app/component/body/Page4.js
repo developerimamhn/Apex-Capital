@@ -11,7 +11,7 @@ const Page4 = () => {
                 <div className='flex justify-center items-center flex-col '>
                     <span className='componiesp'>Our Blog</span>
                     <h2 className="mettingcompo m-0 mt-[15px] lg:mt-[24px] mb-[20px] lg:mb-[32px] text-center">Apex capital news & resources</h2>
-                    <span className='componiesp'>The latest industry news, portfolio updates, and <br/> investment insights from the apex capital team.</span>
+                    <span className='componiesp'>The latest industry news portfolio updsates, and <br/> investment insights from the apex capital team.</span>
                 </div>
                 <div className='flex sm:flex-row flex-col gap-[142px] sm:gap-[12px] md:gap-[16px] xl:gap-[21px] 2xl:gap-[25px] mt-100px justify-center'>
                     <div className='relative'>
