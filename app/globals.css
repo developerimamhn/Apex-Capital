@@ -14,33 +14,48 @@
   }
 }
 
-@font-face{
+@font-face {
   font-family: 'Klavika';
-  src: url(./font/Klavika-bold.otf);
-}
-@font-face{
-  font-family: 'Klavika';
-  src: url(./font/Klavika-medium.otf);
-}
-@font-face{
-  font-family: 'Klavika';
-  src: url(./font/Klavika-light.otf);
+  src: url('./font/Klavika-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-@font-face{
-  font-family: 'Mersad';
-  src: url(./font/MersadThin.ttf);
-}
-@font-face{
-  font-family: 'Mersad';
-  src: url(./font/MersadRegular.ttf);
+@font-face {
+  font-family: 'Klavika';
+  src: url('./font/Klavika-medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face{
+@font-face {
+  font-family: 'Klavika';
+  src: url('./font/Klavika-light.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Mersad';
-  src: url(./font/MersadLight.ttf);
+  src: url('./font/MersadThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mersad';
+  src: url('./font/MersadRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mersad';
+  src: url('./font/MersadLight.ttf') format('truetype');
   font-weight: 300;
+  font-style: normal;
 }
+
 
 body {
   color: var(--foreground);
