@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        'dynamic-gap': 'clamp(25px, 4vw, 64px)',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

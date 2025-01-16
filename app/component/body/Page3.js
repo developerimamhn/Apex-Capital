@@ -22,16 +22,16 @@ const Page3 = () => {
                                     <h3 className='johnsmith'>John smith</h3>
                                     <span className='componiesp'>Investor </span>
                                 </div>
-                            <Image src={image6} alt=""/>
+                            <Image className='scale-[1] hover:scale-[1.06] duration-300' src={image6} alt=""/>
                             </div>
                             <div className=''>
-                            <Image src={image7} alt=""/>
+                            <Image className='scale-[1] hover:scale-[1.06] duration-300' src={image7} alt=""/>
                             </div>
                             <div className=''>
-                            <Image src={image8} alt=""/>
+                            <Image className='scale-[1] hover:scale-[1.06] duration-300' src={image8} alt=""/>
                             </div>
                             <div className=''>
-                            <Image src={image9} alt=""/>
+                            <Image className='scale-[1] hover:scale-[1.06] duration-300' src={image9} alt=""/>
                             </div>
                         </div>
                         <span className='componiesp'>We believe in building an inclusive, community-driven team whose expertise and <br/> dedication will benefit the tech ecosystem at large. We strive to work with <br/> conviction, integrity, humour, and humility. </span>

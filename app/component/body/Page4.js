@@ -14,8 +14,8 @@ const Page4 = () => {
                     <span className='componiesp'>The latest industry news portfolio updsates, and <br/> investment insights from the apex capital team.</span>
                 </div>
                 <div className='flex sm:flex-row flex-col gap-[142px] sm:gap-[12px] md:gap-[16px] xl:gap-[21px] 2xl:gap-[25px] mt-100px justify-center'>
-                    <div className='relative'>
-                        <Image src={image10} alt=''/>
+                    <div className='relative scale-[1] hover:scale-[1.05] duration-300'>
+                        <Image className='' src={image10} alt=''/>
                         <div className='imageunder'>
                             <span className='componiesp'>news letter</span>
                             <h2 className="mettingcompo m-0 mt-[15px] lg:mt-[24px] mb-[20px] lg:mb-[32px] text-left !text-[20px] sm:!text-[25px] lg:!text-[30px] xl:!text-[35px] 2xl:!text-[40px]">September apex capital news letter</h2>
@@ -23,8 +23,8 @@ const Page4 = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-[12px] md:gap-[16px] xl:gap-[21px] 2xl:gap-[25px]'>
-                        <Image src={image11} alt=''/>
-                        <Image src={image12} alt=''/>
+                        <Image className='scale-[1] hover:scale-[1.05] duration-300' src={image11} alt=''/>
+                        <Image className='scale-[1] hover:scale-[1.05] duration-300' src={image12} alt=''/>
                     </div>
                 </div>
             </div>

@@ -58,12 +58,12 @@ const NavBar = () => {
                     <Link className={`Link-manu-bar`} href="Portfolio">Portfolio</Link>
                     <Link className='Link-manu-bar' href="Funds">Funds</Link>
                     <Link className='Link-manu-bar' href="Our Teamo">Our Teamo</Link>
-                    <Link className='Link-manu-bar' href="News & Resources">News & Resources</Link>
+                    <Link className='Link-manu-bar ' href="News & Resources">News & Resources</Link>
                 </nav>
 
                 
                 <ul className=''>
-                    <button className='founderbtn flex justify-center items-center gap-[12px]'>I'm a founder<Image src={image13} alt=''/></button>
+                    <button className='founderbtn flex justify-center items-center gap-[12px] hover:scale-[1.07] duration-300'>I'm a founder<Image src={image13} alt=''/></button>
                 </ul>
                 
                 

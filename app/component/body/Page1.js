@@ -35,21 +35,25 @@ const Page1 = () => {
                 <div className='flex justify-center items-center gap-[84px] w-full flex-col sm:flex-row'>
                     <div className='flex-1 overflow-hidden sm:w-auto w-[100%]'>
                     <Swiper
+                    loop={true}
                         pagination={{
                             type: 'fraction',
                         }}
-                        navigation={false}
+                        navigation={{
+                            nextEl: '.swiper-next',
+                            prevEl: '.swiper-prev',
+                          }}
                         modules={[Pagination, Navigation]}
-                        className="mySwiper"
+                        className="mySwiper w-full"
                     >
                         <SwiperSlide>
-                            <Image src={image3} alt="Image 1" />
+                            <Image className='w-full' src={image3} alt="Image 1" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={image3} alt="Image 2" />
+                            <Image className='w-full' src={image3} alt="Image 2" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={image3} alt="Image 3" />
+                            <Image className='w-full' src={image3} alt="Image 3" />
                         </SwiperSlide>
                 </Swiper>
 
@@ -66,15 +70,15 @@ const Page1 = () => {
                                 </svg>
                             </div>
                             <div className="flex justify-center items-center gap-4">
-                                <button
+                                <button 
                                     onClick={goToPrev}  // Go to previous slide
-                                    className="arrowbutton"
+                                    className="arrowbutton swiper-next scale-[0.9] hover:scale-[1] duration-300"
                                 >
                                     <Image src={image4} alt="Previous Arrow" />
                                 </button>
                                 <button
                                     onClick={goToNext}  // Go to next slide
-                                    className="arrowbutton"
+                                    className="arrowbutton swiper-prev scale-[0.9] hover:scale-[1] duration-300"
                                 >
                                     <Image src={image5} alt="Next Arrow" />
                                 </button>

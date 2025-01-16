@@ -35,6 +35,8 @@
   font-style: normal;
 }
 
+
+
 @font-face {
   font-family: 'Mersad';
   src: url('./font/MersadThin.ttf') format('truetype');
@@ -54,9 +56,11 @@
   src: url('./font/MersadLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
-} my css
+} 
 
-
+*{
+  list-style-type: none;
+}
 
 body {
   color: var(--foreground);
@@ -70,16 +74,16 @@ body {
     @apply border border-[#FFFFFF3D] py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px]
   }
   .Link-manu-bar{
-    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] 
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] hover:text-[#bec7fe] duration-300
   }
   .venturecpai{
     @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
   }
   .backing{
-    @apply text-[28px] sm:text-[33px] md:text-[44px] lg:text-[50px] xl:text-[58px] 2xl:text-[64px] mt-[10px] sm:mt-[20px] lg:mt-[32px]
+    @apply text-[28px] sm:text-[33px] md:text-[44px] lg:text-[50px] xl:text-[58px] 2xl:text-[64px] mt-[10px] sm:mt-[20px] lg:mt-[25px]
   }
   .enble{
-    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]  mt-[15px] sm:mt-[20px] xl:mt-[48px]
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]  mt-[15px] sm:mt-[20px] xl:mt-[25px]
   }
   .ScrollDown{
     @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
@@ -140,7 +144,7 @@ body {
     @apply py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px] px-[16px] sm:px-[20px] md:px-[25px] lg:px-[30px] xl:px-[35px] 2xl:px-[40px] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] 
   }
   .getstartedbutt{
-    @apply py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px] px-[16px] sm:px-[20px] md:px-[25px] lg:px-[30px] xl:px-[35px] 2xl:px-[40px] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[10px] sm:mt-[15px] xl:mt-[40px]
+    @apply py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px] px-[16px] sm:px-[20px] md:px-[25px] lg:px-[30px] xl:px-[35px] 2xl:px-[40px] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[10px] sm:mt-[15px] xl:mt-[30px]
   }
   .arrowbutton{
     @apply w-[55px] lg:w-[70px] 2xl:w-[100px] h-[55px] lg:h-[70px] 2xl:h-[100px]
@@ -220,12 +224,10 @@ body {
     justify-content: center;
     align-items: center;
     color: #252A4E;
-    leading-trim: both;
-    text-edge: cap;
     font-family: "Klavika";
     font-style: normal;
     font-weight: 300;
-    line-height: 120%; /* 28.8px */
+    line-height: 120%;
   }
   .navbarunderborder{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.30) 52.28%, rgba(255, 255, 255, 0.00) 100%);
@@ -338,7 +340,7 @@ body {
     text-edge: cap;
     font-family: "Klavika";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 150%; /* 36px */
   }
   .johnsmith{
@@ -373,7 +375,7 @@ body {
     color: #FFFFFF;
   }
   .inputsubmit{
-    background: #fff !important;
+    background: #fff ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,6 +394,13 @@ body {
     stroke-width: 1px;
     stroke: rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.1);
+  }
+  .socialmediaimage:hover{
+    fill: rgba(255, 255, 255, 0.2);
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
   }
 }
 
@@ -425,4 +434,13 @@ body {
   font-style: normal;
   font-weight: 100;
   line-height: 120%; /* 76.8px */
+}
+
+
+.awesonedesign{
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FF8E8E;
+  font-family: "Proxima Nova";
+  font-size: 100px;
 }
