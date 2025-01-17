@@ -56,7 +56,6 @@ const Page1 = () => {
                             <Image className='w-full' src={image3} alt="Image 3" />
                         </SwiperSlide>
                 </Swiper>
-
                     </div>
                     <div className='flex-1'>
                         <h2 className='firsthanexpein mb-[22px] lg:mb-[32px]'>First-hand experience</h2>

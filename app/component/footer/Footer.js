@@ -7,24 +7,53 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <div className='bg-[#015DCE] overflow-hidden pb-[30px] md:pb-[44px] xl:pb-[64px]'>
-            <div className='container mx-auto pt-[60px] md:pt-[80px] lg:pt-[120px] xl:pt-[150px] 2xl:pt-[200px] sm:px-0 px-[24px]'>
-                <p className='componiesp !text-[#fff]'>Get in touch</p>
+        <div className='bg-[#015DCE] overflow-hidden pb-[30px] md:pb-[44px] xl:pb-[64px] relative'>
+            <svg className='absolute top-0 right-0 w-[30%]' viewBox="0 0 554 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="675" y1="159.35" x2="-31" y2="159.35" stroke="url(#paint0_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
+<line x1="53.65" y1="390" x2="53.65" y2="-231" stroke="url(#paint1_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
+<line x1="221.65" y1="390" x2="221.65" y2="-231" stroke="url(#paint2_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
+<line x1="389.65" y1="390" x2="389.65" y2="-231" stroke="url(#paint3_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
+<defs>
+<linearGradient id="paint0_linear_1_827" x1="-31" y1="158.5" x2="675" y2="158.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.505" stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_827" x1="54.5" y1="-231" x2="54.5" y2="390" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.505" stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_827" x1="222.5" y1="-231" x2="222.5" y2="390" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.505" stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint3_linear_1_827" x1="390.5" y1="-231" x2="390.5" y2="390" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.505" stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+
+            <div className='mx-auto pt-[60px] md:pt-[80px] lg:pt-[120px] xl:pt-[150px] 2xl:pt-[200px] sm:px-[50px] px-[24px]'>
+                <p className='componiesp !text-[#fff] hover:!text-[#fff]'>Get in touch</p>
                 <h2 className="mettingcompo m-0 mt-[16px] lg:mt-[24px] pb-[40px] lg:pb-[100px] text-left !text-[#fff]">Contact us</h2>
                 <div className='grid sm:grid-cols-12'>
                     <div className='p-[30px] md:p-[40px] xl:p-[64px] sm:border-x-[1px] sm:border-t-[1px] sm:border-[#FFF] sm:border-opacity-50 col-span-8 '>
                         <h1 className='Froggo-Logo w-[150px] lg:w-[180px] 2xl:w-[207px]'><Image src={logo} alt=''/></h1>
                         <div className='flex flex-col sm:flex-row justify-between mt-[30px] md:mt-[40px] lg:mt-[50px] xl:mt-[60px] 2xl:mt-[73px] gap-[30px] md:gap-[40px] lg:gap-[60px] xl:gap-[80px] 2xl:gap-[98px]'>
                             <ul className='flex justify-start flex-col  gap-[16px] md:gap-[20px] xl:gap-[24px]'>
-                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px]'>Our Tax Efficient Funds</li>
-                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Apex Capital Blended S/EIS Funds</Link></li>
-                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Apex Capital EIS Fund</Link></li>
-                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Apex Capital Knowledge Intensive EIS Fund</Link></li>
-                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Fair By Design Impact EIS Fund</Link></li>
-                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Carry Back EIS Fund</Link></li>
+                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px] cursor-pointer'>Our Tax Efficient Funds</li>
+                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff] cursor-pointer'><Link href='#'>Apex Capital Blended S/EIS Funds</Link></li>
+                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff] cursor-pointer'><Link href='#'>Apex Capital EIS Fund</Link></li>
+                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff] cursor-pointer'><Link href='#'>Apex Capital Knowledge Intensive EIS Fund</Link></li>
+                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff] cursor-pointer'><Link href='#'>Fair By Design Impact EIS Fund</Link></li>
+                                <li className='componiesp !leading-[120%] opacity-80 !text-[#fff] cursor-pointer'><Link href='#'>Carry Back EIS Fund</Link></li>
                             </ul>
                             <ul className='flex justify-start flex-col  gap-[16px] md:gap-[20px] xl:gap-[24px]'>
-                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px]'>Quick Links</li>
+                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px] cursor-pointer'>Quick Links</li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Tax-Efficient Funds</Link></li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Institutional Funds</Link></li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Apex Capital Syndicate</Link></li>
@@ -32,7 +61,7 @@ const Footer = () => {
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Privacy Policy</Link></li>
                             </ul>
                             <ul className='flex justify-start flex-col  gap-[16px] md:gap-[20px] xl:gap-[24px]'>
-                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px]'>Our Institutional Fund</li>
+                                <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !text-[#fff] mb-[3px] lg:mb-[6px] cursor-pointer'>Our Institutional Fund</li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Apex Capital Fund lll</Link></li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Fair By Design Fund</Link></li>
                                 <li className='componiesp !leading-[120%] opacity-80 !text-[#fff]'><Link href='#'>Good Food Fund</Link></li>
@@ -45,7 +74,7 @@ const Footer = () => {
                         <input className='inputsubmit hover:bg-transparent hover:text-[#fff] border-[1px] duration-300 hover:border-[#FFFFFF3D] cursor-pointer' type='submit' value='Submit'/>
                         </div>
                         <div className='sm:pl-[32px] sm:pr-[32px] sm:border-t-[1px] sm:border-r-[1px] sm:border-[#FFF] sm:border-opacity-50 h-fit '>
-                        <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px]   2xl:text-[32px] !text-[#fff] mb-[20px] lg:mb-[32px] mt-[20px] lg:mt-[32px]'><p>Social Media</p></li>
+                        <li className='componiesp capitalize text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[28px]   2xl:text-[32px] !text-[#fff] hover:!text-[#fff] mb-[20px] lg:mb-[32px] mt-[20px] lg:mt-[32px]'><p>Social Media</p></li>
                             <div className='flex justify-between items-center gap-2 lg:gap-0 sm:flex-col lg:flex-row '>
                                 <p className='socialmediaimage cursor-pointer'><svg className='w-[25px] sm:w-[30px] lg:w-[35px] xl:w-[35px] 2xl:w-[48px]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
                                 <path fillRule="evenodd" clip-rule="evenodd" d="M39.5432 16.1775C39.5568 16.5273 39.5613 16.8769 39.5613 17.2267C39.5613 27.8311 32.1016 40.0732 18.4605 40.0732C14.2701 40.0732 10.3737 38.7377 7.09082 36.4642C7.67114 36.5278 8.2605 36.5756 8.8589 36.5756C12.3333 36.5756 15.5333 35.2876 18.0716 33.1253C14.8264 33.0776 12.0861 30.7405 11.141 27.5608C11.5947 27.6562 12.0619 27.704 12.5397 27.704C13.2135 27.704 13.8677 27.6087 14.4947 27.418C11.0987 26.6866 8.54086 23.4434 8.54086 19.5482C8.54086 19.5005 8.54086 19.4845 8.54086 19.4527C9.54172 20.041 10.6873 20.4065 11.9037 20.4542C9.91099 19.0074 8.60112 16.5431 8.60112 13.7609C8.60112 12.2982 8.96589 10.915 9.60801 9.72256C13.2647 14.5875 18.7318 17.7832 24.8952 18.1171C24.7686 17.5288 24.7038 16.909 24.7038 16.2889C24.7038 11.8532 28.0244 8.26001 32.1212 8.26001C34.2541 8.26001 36.1804 9.22997 37.5325 10.788C39.2252 10.4383 40.8109 9.77057 42.2459 8.84845C41.6897 10.7245 40.5154 12.2981 38.981 13.2838C40.4823 13.0931 41.9143 12.6641 43.2422 12.0282C42.2459 13.6339 40.9918 15.0487 39.5432 16.1775Z" fill="white"/>
@@ -77,8 +106,8 @@ const Footer = () => {
                     © 2024 Apex Capital. All Rights Reserved.
                     </p>
                     <div className='flex items-center gap-dynamic-gap'>
-                        <li className='componiesp !leading-[120%] !text-[#fff]'><Link href='#'>Privacy Policy</Link></li>
-                        <li className='componiesp !leading-[120%] !text-[#fff]'><Link href='#'>Term & Condition</Link></li>
+                        <li className='componiesp !leading-[120%] !text-[#fff] hover:!text-[#fff]'><Link href='#'>Privacy Policy</Link></li>
+                        <li className='componiesp !leading-[120%] !text-[#fff] hover:!text-[#fff]'><Link href='#'>Term & Condition</Link></li>
                     </div>
                     </div>
             </div>

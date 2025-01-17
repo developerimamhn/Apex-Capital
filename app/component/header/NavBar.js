@@ -34,7 +34,7 @@ const NavBar = () => {
     }, []);
     return (
         <div className='relative z-30 w-full'>
-            <header className=' container mx-auto flex justify-between items-center py-[18px] sm:py-[23px] lg:py-[32px] relative px-[24px] sm:px-[0]'>
+            <header className=' mx-auto flex justify-between items-center py-[18px] sm:py-[23px] lg:py-[32px] relative px-[24px] sm:px-[50]'>
                 <div className='sm:hidden relative top-[-11px]'>
                     
                     <div 

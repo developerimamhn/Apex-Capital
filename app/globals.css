@@ -117,7 +117,7 @@ body {
     @apply text-[35px] sm:text-[44px] md:text-[50px] lg:text-[60px] xl:text-[70px] 2xl:text-[84px]
   }
   .componiesp{
-    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] hover:!text-[#bec7fe] duration-300
   }
   .johnsmith{
     @apply text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[48px]
@@ -335,7 +335,6 @@ body {
     line-height: 120%; /* 100.8px */
   }
   .componiesp{
-    color: #252A4E;
     leading-trim: both;
     text-edge: cap;
     font-family: "Klavika";
@@ -413,7 +412,7 @@ body {
   transform: translate3d(0, 0, 0);
   z-index: 10;
   top: 50% !important;
-  right: -10px !important;
+  right: -22px !important;
   display: flex;
   justify-content: end;
   color: #252A4E !important;
