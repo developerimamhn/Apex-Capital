@@ -4,8 +4,8 @@ import image2 from '../image/image2.png';
 
 const HeroArea = () => {
     return (
-<div className='relative w-full overflow-hidden'>
-    <svg className='absolute w-full px-[200px] 2xl:px-[150px] 3xl:px-[400px]' viewBox="0 0 1651 997" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div className='relative w-full overflow-hidden z-10'>
+    {/* <svg className='absolute w-full px-[200px] 2xl:px-[150px] 3xl:px-[400px]' viewBox="0 0 1651 997" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="0.5" y1="2.18557e-08" x2="0.499956" y2="997" stroke="url(#paint0_linear_123_341)" stroke-opacity="0.4"/>
 <line x1="150.5" y1="2.18557e-08" x2="150.5" y2="997" stroke="url(#paint1_linear_123_341)" stroke-opacity="0.4"/>
 <line x1="300.5" y1="2.18557e-08" x2="300.5" y2="997" stroke="url(#paint2_linear_123_341)" stroke-opacity="0.4"/>
@@ -80,7 +80,7 @@ const HeroArea = () => {
 <stop offset="1" stop-color="white" stop-opacity="0"/>
 </linearGradient>
 </defs>
-            </svg>
+            </svg> */}
             <div className='mx-auto  py-[130px] sm:py-[150px] md:py-[180px] lg:py-[220px] xl:py-[260px] 2xl:py-[270px] sm:px-[50] px-[24px]'>
                 <div className='flex justify-center items-center flex-col'>
                     <p className='venturecpai'>#01 Venture Capital Company</p>
@@ -89,8 +89,8 @@ const HeroArea = () => {
                     <button className='getstartedbutt pb-5 hover:bg-transparent hover:text-[#fff] border-[1px] duration-300 hover:border-[#FFFFFF3D]'>Get Started</button>
                 </div>
             </div>
-            <div className='absolute bottom-2 sm:bottom-[51px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col sm:gap-[12px]'>
-                <Image src={image2} alt=""/>
+            <div className='absolute bottom-2 sm:bottom-[41px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col sm:gap-[12px]'>
+                <Image className='' src={image2} alt=""/>
                 <h3 className='ScrollDown'>Scroll Down</h3>
             </div>
         </div>

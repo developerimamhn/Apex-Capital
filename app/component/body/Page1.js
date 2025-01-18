@@ -1,6 +1,6 @@
 'use client';
 
-import React , { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import image3 from '../image/image3.png';
 import image4 from '../image/image4.png';
@@ -27,18 +27,46 @@ const Page1 = () => {
       swiperRef.current.swiper.slidePrev();
     }
   };
+
+  const [activeSection, setActiveSection] = useState(null);
+
+  const sectionsRef = useRef([]);
+  useEffect(() => {
+    const handleScroll = () => {
+      sectionsRef.current.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
+          setActiveSection(index);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
     return (
         <div>
             <div className='container mx-auto py-[60px] md:py-[80px] lg:py-[120px] xl:py-[150px] 2xl:py-[200px] sm:px-0 px-[24px]'>
+            <div
+                className={`flex flex-col justify-center items-center transition-all duration-700 ${
+                    activeSection === 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                ref={(el) => (sectionsRef.current[1] = el)}
+                >
                 <p className='promise'>Our Promise</p>
                 <h2 className='capitalapex'>Why apex capital?</h2>
-                <div className='flex justify-center items-center gap-[84px] w-full flex-col sm:flex-row'>
-                    <div className='flex-1 overflow-hidden sm:w-auto w-[100%]'>
+                </div>
+
+                <div className='flex justify-center items-center gap-[84px] w-full flex-col sm:flex-row '>
+               
+                    <div className='flex-1 overflow-hidden sm:w-auto w-[100%] relative'>
+                    <div className="swiper-pagination text-[40px] md:text-[50px] lg:text-[60px] xl:text-[80px] 2xl:text-[100px]"></div>
                     <Swiper
                     loop={true}
-                        pagination={{
-                            type: 'fraction',
-                        }}
+                    pagination={{
+                        el: '.swiper-pagination',
+                        type: 'fraction',
+                      }}
                         navigation={{
                             nextEl: '.swiper-next',
                             prevEl: '.swiper-prev',
@@ -57,7 +85,9 @@ const Page1 = () => {
                         </SwiperSlide>
                 </Swiper>
                     </div>
-                    <div className='flex-1'>
+                    <div className={`flex-1 ${
+                    activeSection === 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`} ref={(el) => (sectionsRef.current[1] = el)}>
                         <h2 className='firsthanexpein mb-[22px] lg:mb-[32px]'>First-hand experience</h2>
                         <p className='jusinverstong'>
                         We're not just investors; our team is made up of practised entrepreneurs who have lived the startup journey. The result? An eye for promising ideas and the know-how to scale them. Expect more than funding; we offer a holistic partnership based on years of experience.

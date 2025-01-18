@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <div className='bg-[#015DCE] overflow-hidden pb-[30px] md:pb-[44px] xl:pb-[64px] relative'>
-            <svg className='absolute top-0 right-0 w-[30%]' viewBox="0 0 554 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='absolute top-0 right-0 w-[30%] z-[-1]' viewBox="0 0 554 390" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="675" y1="159.35" x2="-31" y2="159.35" stroke="url(#paint0_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
 <line x1="53.65" y1="390" x2="53.65" y2="-231" stroke="url(#paint1_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
 <line x1="221.65" y1="390" x2="221.65" y2="-231" stroke="url(#paint2_linear_1_827)" stroke-opacity="0.8" stroke-width="0.7"/>
